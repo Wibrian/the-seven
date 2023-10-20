@@ -1,0 +1,57 @@
+@import url("https://fonts.googleapis.com/css2?family=Crimson+Text&family=Libre+Baskerville&family=Young+Serif&display=swap");
+
+:root {
+  --pickled-bluewood: #304255;
+  --soft-amber: #cbbeaf;
+}
+
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+/* Hero */
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 55px 20px 55px;
+  color: var(--pickled-bluewood);
+  background-image: url("/image/twilight-2.svg");
+  background-repeat: no-repeat;
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 0 40px 0 40px;
+}
+
+.title > h1 {
+  font-family: "Libre Baskerville", serif;
+  font-size: 60px;
+  margin: 0;
+}
+
+.paimon > img {
+  width: 550px;
+}
+
+.view {
+  background-color: var(--pickled-bluewood);
+  color: var(--soft-amber);
+  border: none;
+  border-radius: 5px;
+  padding: 17px 30px 17px 30px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.view:hover {
+  color: var(--pickled-bluewood);
+  background-color: var(--soft-amber);
+  transition: 0.3s;
+}
