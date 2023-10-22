@@ -8,16 +8,17 @@
 * {
   font-family: Arial, Helvetica, sans-serif;
   margin: 0;
+  box-sizing: border-box;
 }
 
-/* Hero */
+/* hero */
 
 header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 55px 20px 55px;
+  padding: 20px 55px 0 55px;
   color: var(--pickled-bluewood);
   background-image: url("/image/twilight-2.svg");
   background-repeat: no-repeat;
@@ -55,3 +56,36 @@ header {
   background-color: var(--soft-amber);
   transition: 0.3s;
 }
+
+/* navbar */
+
+nav {
+  background-color: var(--pickled-bluewood);
+}
+
+nav > .navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  list-style-type: none;
+  padding: 0;
+}
+
+.navbar > li > a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--soft-amber);
+  text-decoration: none;
+  width: 150px;
+  height: 70px;
+  transition: 0.3s;
+  border-bottom: 0 solid;
+}
+
+.navbar > li > a:hover {
+  border-bottom: 5px solid var(--soft-amber);
+  transition: 0.3s;
+}
+
+/* archon element */
