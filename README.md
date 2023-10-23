@@ -1,4 +1,3 @@
 # the-seven
 
-test
-test
+Dicoding Submission 2023

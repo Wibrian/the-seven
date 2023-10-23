@@ -1,14 +1,43 @@
 @import url("https://fonts.googleapis.com/css2?family=Crimson+Text&family=Libre+Baskerville&family=Young+Serif&display=swap");
 
 :root {
+  /* pallette paimon */
   --pickled-bluewood: #304255;
   --soft-amber: #cbbeaf;
+  /* pallette venti */
+  --keppel: #41ae94;
+  --downy: #75d1b5;
+  --rangitoto: #343327;
+  --santa-fe: #bc744c;
+  /* pallette raiden */
 }
 
 * {
   font-family: Arial, Helvetica, sans-serif;
   margin: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Libre Baskerville", serif;
+}
+
+h2 {
+  font-size: 36px;
+  color: var(--pickled-bluewood);
+}
+
+h3 {
+  font-size: 30px;
+  color: var(--pickled-bluewood);
+}
+
+p {
+  font-size: 17.5px;
+  color: var(--pickled-bluewood);
 }
 
 /* hero */
@@ -32,7 +61,6 @@ header {
 }
 
 .title > h1 {
-  font-family: "Libre Baskerville", serif;
   font-size: 60px;
   margin: 0;
 }
@@ -42,16 +70,25 @@ header {
 }
 
 .view {
+  padding-top: 17px;
+  padding-bottom: 17px;
+}
+
+.view > a {
   background-color: var(--pickled-bluewood);
   color: var(--soft-amber);
-  border: none;
   border-radius: 5px;
   padding: 17px 30px 17px 30px;
   cursor: pointer;
   transition: 0.3s;
 }
 
-.view:hover {
+.view > a {
+  text-decoration: none;
+  color: var(--soft-amber);
+}
+
+.view > a:hover {
   color: var(--pickled-bluewood);
   background-color: var(--soft-amber);
   transition: 0.3s;
@@ -89,3 +126,187 @@ nav > .navbar {
 }
 
 /* archon element */
+
+.archon-element {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  gap: 60px;
+  padding: 120px 70px 120px 70px;
+}
+
+.archon-element > p {
+  line-height: 25px;
+  color: var(--pickled-bluewood);
+}
+
+.element > img {
+  width: 170px;
+  height: 170px;
+}
+
+.element > p {
+  font-weight: bold;
+}
+
+.ideal {
+  background-color: var(--pickled-bluewood);
+  color: var(--soft-amber);
+  padding: 10px 0 10px 0;
+  border-radius: 5px;
+  font-size: 18px;
+  font-family: "Libre Baskerville", serif;
+}
+
+.all-element {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 50px 50px;
+}
+
+/* venti */
+
+.venti {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 100px 80px 100px 80px;
+}
+
+.figure-venti,
+.details-venti {
+  display: flex;
+  flex-direction: column;
+  padding-left: 20px;
+  padding-right: 20px;
+  width: 640px;
+}
+
+.venti-name > h3 {
+  color: var(--keppel);
+  font-size: 46px;
+  line-height: 35px;
+}
+
+.venti-name {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  text-align: end;
+  gap: 10px;
+}
+
+.venti-title > p {
+  background-color: var(--rangitoto);
+  padding: 5px 10px 5px 35px;
+  color: white;
+  font-size: 24px;
+  border-radius: 80px 10px 10px 10px;
+}
+
+.details-venti {
+  gap: 30px;
+}
+
+.venti-ideal {
+  color: var(--pickled-bluewood) !important;
+  font-size: 40px;
+}
+
+.details-venti > h3 {
+  color: var(--keppel);
+}
+
+.desc {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.known-venti {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 10px 10px;
+}
+
+.known-venti > p {
+  background-color: var(--keppel);
+  color: white;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.video > iframe {
+  width: 100%;
+  height: 320px;
+  border-radius: 7px;
+}
+
+.image-character > img {
+  width: 600px;
+}
+
+/* Aside */
+
+.aside {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-flow: row wrap;
+  gap: 20px;
+  padding: 20px;
+  margin: 50px 80px 50px 80px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px gray;
+}
+
+.table {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.table-desc {
+  width: 100px;
+}
+
+.table-desc > p {
+  padding-bottom: 10px;
+  color: black;
+  font-size: 14px;
+}
+
+.table-desc > div > p {
+  font-size: 14px;
+}
+
+.figure-genshin {
+  align-self: center;
+  text-align: center;
+}
+
+.figure-genshin > img {
+  padding-bottom: 10px;
+  width: 300px;
+}
+
+/* Footer */
+
+footer {
+  padding: 10px 70px 10px 70px;
+  /* background-color: var(--pickled-bluewood); */
+}
+
+.about {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.copyright {
+  text-align: center;
+}
