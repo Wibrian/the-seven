@@ -51,6 +51,9 @@ header {
   color: var(--pickled-bluewood);
   background-image: url("/image/twilight-2.svg");
   background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
 }
 
 .title {
@@ -98,12 +101,17 @@ header {
 
 nav {
   background-color: var(--pickled-bluewood);
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  padding: 0;
 }
 
-nav > .navbar {
+.navbar {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  align-items: center;
   list-style-type: none;
   padding: 0;
 }
@@ -153,7 +161,7 @@ nav > .navbar {
 .ideal {
   background-color: var(--pickled-bluewood);
   color: var(--soft-amber);
-  padding: 10px 0 10px 0;
+  padding: 10px 5px 10px 5px;
   border-radius: 5px;
   font-size: 18px;
   font-family: "Libre Baskerville", serif;
@@ -271,7 +279,8 @@ nav > .navbar {
 }
 
 .table-desc {
-  width: 100px;
+  width: 110px;
+  line-height: 21px;
 }
 
 .table-desc > p {
@@ -291,22 +300,201 @@ nav > .navbar {
 
 .figure-genshin > img {
   padding-bottom: 10px;
-  width: 300px;
+  width: 250px;
 }
 
 /* Footer */
 
 footer {
-  padding: 10px 70px 10px 70px;
-  /* background-color: var(--pickled-bluewood); */
+  padding: 10px 80px 0 80px;
+  background-color: var(--pickled-bluewood);
 }
 
 .about {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .copyright {
+  border-top: 1px solid var(--soft-amber);
+}
+
+.copyright > p {
   text-align: center;
+  color: white;
+  font-size: 14px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.desc-seven > p,
+.source > p,
+.support-links > p,
+.about-me > p {
+  padding-bottom: 10px;
+  font-size: 14px;
+}
+
+.desc-seven > p > strong,
+.source > p > b,
+.support-links > p > b,
+.about-me > p > b {
+  color: var(--soft-amber);
+  font-size: 18px;
+}
+
+.footer-desc > p {
+  font-size: 14px;
+  color: white;
+  line-height: 25px;
+}
+
+.footer-text > p > a {
+  text-decoration: none;
+  font-size: 14px;
+  color: white;
+  line-height: 25px;
+  transition: 0.3s;
+}
+
+.footer-text > p > a:hover {
+  color: var(--soft-amber);
+  transition: 0.3s;
+}
+
+.footer-about {
+  display: flex;
+  justify-content: flex-start;
+  gap: 10px;
+}
+
+.footer-about > a > i {
+  color: white;
+  font-size: 36px;
+  transition: 0.3s;
+}
+
+.footer-about > a > i:hover {
+  color: var(--soft-amber);
+  transition: 0.3s;
+}
+
+/* responsive */
+
+@media screen and (max-width: 1160px) {
+  p {
+    font-size: 16.5px;
+  }
+
+  /* hero */
+  header {
+    flex-direction: column-reverse;
+    padding: 20px 20px 20px 20px;
+    background-attachment: fixed;
+  }
+
+  .title {
+    text-align: center;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .title > h1 {
+    font-size: 36px;
+  }
+
+  .paimon > img {
+    width: 280px;
+  }
+
+  /* navbar */
+
+  .navbar {
+    flex-direction: column;
+  }
+
+  /* archon element */
+
+  .archon-element {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .element > img {
+    width: 80px;
+    height: 80px;
+  }
+
+  .ideal {
+    font-size: 15.5px;
+  }
+
+  .all-element {
+    gap: 25px 25px;
+  }
+
+  /* venti */
+
+  .venti {
+    flex-direction: column;
+    padding-left: 20px;
+    padding-right: 20px;
+    gap: 60px;
+  }
+
+  .figure-venti,
+  .details-venti {
+    width: auto;
+  }
+
+  .venti-name > h3 {
+    font-size: 40px;
+  }
+
+  .venti-title > p {
+    font-size: 20px;
+  }
+
+  .venti-ideal {
+    font-size: 32px;
+  }
+
+  .image-character > img {
+    width: 300px;
+  }
+
+  .video > iframe {
+    height: 230px;
+  }
+
+  /* aside */
+
+  .aside {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .table {
+    flex-direction: column;
+  }
+
+  .table-desc {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+  }
+
+  /* Footer */
+  footer {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .about {
+    gap: 30px;
+    flex-direction: column;
+  }
 }
