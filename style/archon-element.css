@@ -1,0 +1,40 @@
+/* archon element */
+
+.archon-element {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  gap: 60px;
+  padding: 120px 70px 120px 70px;
+}
+
+.archon-element > p {
+  line-height: 25px;
+  color: var(--pickled-bluewood);
+}
+
+.element > img {
+  width: 170px;
+  height: 170px;
+}
+
+.element > p {
+  font-weight: bold;
+}
+
+.ideal {
+  background-color: var(--pickled-bluewood);
+  color: var(--soft-amber);
+  padding: 10px 5px 10px 5px;
+  border-radius: 5px;
+  font-size: 18px;
+  font-family: "Libre Baskerville", serif;
+}
+
+.all-element {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 50px 50px;
+}

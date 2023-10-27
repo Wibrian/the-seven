@@ -1,0 +1,60 @@
+/* hero */
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 55px 0 55px;
+  color: var(--pickled-bluewood);
+  background-image: url("/image/twilight-2.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  object-fit: cover;
+  height: 100vh;
+  position: relative;
+  z-index: 1;
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 0 40px 0 40px;
+}
+
+.title > h1 {
+  font-size: 60px;
+  margin: 0;
+}
+
+.paimon > img {
+  width: 550px;
+}
+
+.view {
+  padding-top: 17px;
+  padding-bottom: 17px;
+}
+
+.view > a {
+  background-color: var(--pickled-bluewood);
+  color: var(--soft-amber);
+  border-radius: 5px;
+  padding: 17px 30px 17px 30px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.view > a {
+  text-decoration: none;
+  color: var(--soft-amber);
+}
+
+.view > a:hover {
+  color: var(--pickled-bluewood);
+  background-color: var(--soft-amber);
+  transition: 0.3s;
+}
