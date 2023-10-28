@@ -107,6 +107,12 @@ nav {
 
 /* responsive */
 
+@media screen and (max-width: 1280px) {
+  .aside {
+    flex-direction: column;
+  }
+}
+
 @media screen and (max-width: 1200px) {
   p {
     font-size: 17.5px;
@@ -286,7 +292,7 @@ nav {
 
   header {
     flex-direction: column-reverse;
-    padding: 20px 20px 20px 20px;
+    padding: 15px 15px 15px 15px;
     background-attachment: fixed;
   }
 
@@ -301,8 +307,9 @@ nav {
   }
 
   .paimon > img {
-    height: 100%;
-    width: 280px;
+    height: 40vh;
+    width: 100%;
+    object-fit: cover;
   }
 
   /* navbar */
@@ -358,8 +365,8 @@ nav {
   /* archon element */
 
   .archon-element {
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
   }
 
   .element > img {
@@ -379,8 +386,8 @@ nav {
 
   .venti {
     flex-direction: column;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
     gap: 60px;
   }
 
@@ -433,6 +440,10 @@ nav {
 
   .table-desc div {
     text-align: end;
+  }
+
+  .figure-genshin img {
+    width: 100%;
   }
 
   /* Footer */
