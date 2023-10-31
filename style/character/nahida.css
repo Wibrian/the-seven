@@ -1,15 +1,15 @@
-/* venti */
+/* nahida */
 
-.venti {
+.nahida {
   display: flex;
-  flex-direction: row;
+  flex-direction: row-reverse;
   justify-content: center;
   align-items: center;
   padding: 100px 80px 100px 80px;
 }
 
-.figure-venti,
-.details-venti {
+.figure-nahida,
+.details-nahida {
   display: flex;
   flex-direction: column;
   padding-left: 20px;
@@ -17,56 +17,62 @@
   width: 640px;
 }
 
-.venti-name > h3 {
-  color: var(--keppel);
+.figure-nahida {
+  gap: 20px;
+}
+
+.nahida-name > h3 {
+  color: var(--oxley);
   font-size: 46px;
   line-height: 35px;
 }
 
-.venti-name {
+.nahida-name {
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
-  text-align: end;
+  align-items: flex-start;
+  text-align: start;
   gap: 10px;
 }
 
-.venti-title > p {
-  background-color: var(--rangitoto);
-  padding: 5px 10px 5px 35px;
+.nahida-title > p {
+  background-color: var(--stromboli);
+  padding: 5px 35px 5px 15px;
   color: white;
   font-size: 24px;
-  border-radius: 80px 10px 10px 10px;
+  border-radius: 10px 80px 10px 10px;
 }
 
-.details-venti {
+.details-nahida {
+  text-align: end;
   gap: 30px;
 }
 
-.venti-ideal {
+.nahida-ideal {
   color: var(--pickled-bluewood) !important;
   font-size: 40px;
 }
 
-.details-venti > h3 {
-  color: var(--keppel);
+.details-nahida > h3 {
+  color: var(--oxley);
 }
 
-.desc {
+.desc-nahida {
   display: flex;
   flex-direction: column;
+  align-items: flex-end;
   gap: 10px;
 }
 
-.known-venti {
+.known-nahida {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   gap: 10px 10px;
 }
 
-.known-venti > p {
-  background-color: var(--keppel);
+.known-nahida > p {
+  background-color: var(--oxley);
   color: white;
   padding: 10px;
   border-radius: 10px;
@@ -94,6 +100,7 @@
   display: flex;
   position: absolute;
   bottom: 0;
+  right: 0;
   cursor: pointer;
   background: none;
   color: white;

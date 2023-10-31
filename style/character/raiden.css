@@ -1,6 +1,6 @@
-/* venti */
+/* raiden */
 
-.venti {
+.raiden {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -8,8 +8,8 @@
   padding: 100px 80px 100px 80px;
 }
 
-.figure-venti,
-.details-venti {
+.figure-raiden,
+.details-raiden {
   display: flex;
   flex-direction: column;
   padding-left: 20px;
@@ -17,39 +17,49 @@
   width: 640px;
 }
 
-.venti-name > h3 {
-  color: var(--keppel);
+.figure-raiden {
+  gap: 20px;
+}
+
+.raiden-name > h3 {
+  color: var(--medium-purple);
   font-size: 46px;
   line-height: 35px;
 }
 
-.venti-name {
+.raiden-name {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
   text-align: end;
-  gap: 10px;
+  gap: 20px;
 }
 
-.venti-title > p {
-  background-color: var(--rangitoto);
+.raiden-title > p {
+  background-color: var(--jacarta);
   padding: 5px 10px 5px 35px;
   color: white;
   font-size: 24px;
   border-radius: 80px 10px 10px 10px;
 }
 
-.details-venti {
+.details-raiden {
   gap: 30px;
 }
 
-.venti-ideal {
+.raiden-ideal {
   color: var(--pickled-bluewood) !important;
   font-size: 40px;
 }
 
-.details-venti > h3 {
-  color: var(--keppel);
+.details-raiden > h3 {
+  color: var(--medium-purple);
+}
+
+.intro-raiden {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
 }
 
 .desc {
@@ -58,15 +68,15 @@
   gap: 10px;
 }
 
-.known-venti {
+.known-raiden {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   gap: 10px 10px;
 }
 
-.known-venti > p {
-  background-color: var(--keppel);
+.known-raiden > p {
+  background-color: var(--medium-purple);
   color: white;
   padding: 10px;
   border-radius: 10px;
