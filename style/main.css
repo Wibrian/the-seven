@@ -89,6 +89,10 @@ nav {
   background-color: var(--pickled-bluewood);
 }
 
+.scrolled {
+  background-color: var(--soft-amber);
+}
+
 .navbar-responsive {
   display: none;
 }
@@ -249,6 +253,120 @@ nav {
     height: 360px;
   }
 
+  /* zhongli */
+
+  .zhongli {
+    flex-direction: column;
+    padding-left: 30px;
+    padding-right: 30px;
+    gap: 60px;
+  }
+
+  .figure-zhongli,
+  .details-zhongli {
+    width: auto;
+  }
+
+  .known-zhongli {
+    align-items: flex-end;
+  }
+
+  .zhongli-name > h3 {
+    font-size: 40px;
+  }
+
+  .zhongli-title > p {
+    font-size: 20px;
+  }
+
+  .zhongli-ideal {
+    font-size: 32px;
+  }
+
+  .image-character img {
+    width: 100%;
+  }
+
+  .video > iframe {
+    height: 360px;
+  }
+
+  /* raiden */
+
+  .raiden {
+    flex-direction: column;
+    padding-left: 30px;
+    padding-right: 30px;
+    gap: 60px;
+  }
+
+  .figure-raiden,
+  .details-raiden {
+    width: auto;
+  }
+
+  .raiden-name > h3 {
+    font-size: 40px;
+  }
+
+  .raiden-title > p {
+    font-size: 20px;
+  }
+
+  .raiden-ideal {
+    font-size: 32px;
+  }
+
+  .image-character img {
+    width: 100%;
+  }
+
+  .video > iframe {
+    height: 360px;
+  }
+
+  /* nahida */
+
+  .nahida {
+    flex-direction: column;
+    padding-left: 30px;
+    padding-right: 30px;
+    gap: 60px;
+  }
+
+  .desc-nahida {
+    align-items: flex-start;
+  }
+
+  .figure-nahida,
+  .details-nahida {
+    width: auto;
+  }
+
+  .details-nahida {
+    text-align: start;
+  }
+
+  .nahida-name > h3 {
+    font-size: 40px;
+  }
+
+  .nahida-title > p {
+    font-size: 20px;
+  }
+
+  .nahida-ideal {
+    font-size: 32px;
+  }
+
+  .image-character img {
+    width: 100%;
+  }
+
+  .video > iframe {
+    height: 360px;
+  }
+
   /* aside */
 
   .aside {
@@ -396,25 +514,43 @@ nav {
     gap: 60px;
   }
 
-  .figure-venti,
-  .details-venti {
-    width: auto;
+  .video > iframe {
+    height: 230px;
   }
 
-  .venti-name > h3 {
-    font-size: 40px;
+  /* zhongli */
+
+  .zhongli {
+    flex-direction: column;
+    padding-left: 10px;
+    padding-right: 10px;
+    gap: 60px;
   }
 
-  .venti-title > p {
-    font-size: 20px;
+  .video > iframe {
+    height: 230px;
   }
 
-  .venti-ideal {
-    font-size: 32px;
+  /* raiden */
+
+  .raiden {
+    flex-direction: column;
+    padding-left: 10px;
+    padding-right: 10px;
+    gap: 60px;
   }
 
-  .image-character img {
-    width: 100%;
+  .video > iframe {
+    height: 230px;
+  }
+
+  /* nahida */
+
+  .nahida {
+    flex-direction: column;
+    padding-left: 10px;
+    padding-right: 10px;
+    gap: 60px;
   }
 
   .video > iframe {

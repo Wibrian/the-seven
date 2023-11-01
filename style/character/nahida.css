@@ -60,7 +60,7 @@
 .desc-nahida {
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
+  justify-content: flex-end;
   gap: 10px;
 }
 
@@ -68,6 +68,8 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  margin-left: auto;
+  /* align-items: end; */
   gap: 10px 10px;
 }
 
@@ -94,26 +96,4 @@
 .image-character img {
   z-index: -10;
   width: 600px;
-}
-
-.sound button {
-  display: flex;
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  cursor: pointer;
-  background: none;
-  color: white;
-  border: none;
-  color: var(--rangitoto);
-  font-size: 50px;
-  padding: 5px;
-  align-items: center;
-  justify-content: center;
-  border-radius: 100%;
-  transition: 0.3s;
-}
-
-.sound button:hover {
-  color: var(--keppel);
 }

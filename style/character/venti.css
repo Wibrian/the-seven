@@ -89,24 +89,3 @@
   z-index: -10;
   width: 600px;
 }
-
-.sound button {
-  display: flex;
-  position: absolute;
-  bottom: 0;
-  cursor: pointer;
-  background: none;
-  color: white;
-  border: none;
-  color: var(--rangitoto);
-  font-size: 50px;
-  padding: 5px;
-  align-items: center;
-  justify-content: center;
-  border-radius: 100%;
-  transition: 0.3s;
-}
-
-.sound button:hover {
-  color: var(--keppel);
-}
