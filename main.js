@@ -9,7 +9,21 @@ togBtn.addEventListener("click", () => {
     navbar.classList.toggle("active");
     togBtn.style.rotate = "180deg";
     openned = true;
-  } else if (openned === true) {
+  } else {
+    navbar.classList.toggle("active");
+    togBtn.style.rotate = "0deg";
+    openned = false;
+  }
+});
+
+// perlu dikoreksi
+
+const arr = ["header", "main", "footer"];
+
+const test = document.querySelector(arr);
+
+test.addEventListener("click", () => {
+  if (openned == true) {
     navbar.classList.toggle("active");
     togBtn.style.rotate = "0deg";
     openned = false;
@@ -22,7 +36,6 @@ let child = navbar.querySelectorAll("a");
 
 const observer = new IntersectionObserver(function (entries) {
   entries.forEach((entry) => {
-    // console.log(entry.target);
     if (entry.isIntersecting) {
       navbar.classList.add("add-shadow");
       btnHeight.classList.add("scrolled");
