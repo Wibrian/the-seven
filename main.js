@@ -16,13 +16,9 @@ togBtn.addEventListener("click", () => {
   }
 });
 
-// perlu dikoreksi
+const outClick = document.querySelector("main");
 
-const arr = ["header", "main", "footer"];
-
-const test = document.querySelector(arr);
-
-test.addEventListener("click", () => {
+outClick.addEventListener("click", () => {
   if (openned == true) {
     navbar.classList.toggle("active");
     togBtn.style.rotate = "0deg";
