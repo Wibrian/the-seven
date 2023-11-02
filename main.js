@@ -1,5 +1,6 @@
 const togBtn = document.getElementById("toggle-button");
 const navbar = document.querySelector(".navbar");
+const navbarResponsive = document.querySelector(".navbar-responsive");
 
 let openned = false;
 
@@ -15,5 +16,25 @@ togBtn.addEventListener("click", () => {
   }
 });
 
-// const header = document.querySelector("header");
-// const sectionOne = document.querySelector("main");
+const section = document.querySelector("#content");
+const btnHeight = navbarResponsive.querySelector("button");
+let child = navbar.querySelectorAll("a");
+
+const observer = new IntersectionObserver(function (entries) {
+  entries.forEach((entry) => {
+    // console.log(entry.target);
+    if (entry.isIntersecting) {
+      navbar.classList.add("add-shadow");
+      btnHeight.classList.add("scrolled");
+      navbar.style.top = "50px";
+      Array.from(child).forEach((item) => item.classList.add("scrolled"));
+    } else {
+      navbar.classList.remove("add-shadow");
+      btnHeight.classList.remove("scrolled");
+      navbar.style.top = "70px";
+      Array.from(child).forEach((item) => item.classList.remove("scrolled"));
+    }
+  });
+});
+
+observer.observe(section);

@@ -87,10 +87,11 @@ nav {
   list-style-type: none;
   padding: 0;
   background-color: var(--pickled-bluewood);
+  transition: 0.3s;
 }
 
-.scrolled {
-  background-color: var(--soft-amber);
+.add-shadow {
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.65);
 }
 
 .navbar-responsive {
@@ -107,6 +108,10 @@ nav {
   height: 70px;
   transition: 0.3s;
   border-bottom: 0 solid;
+}
+
+.scrolled {
+  height: 50px !important;
 }
 
 .navbar > li > a:hover {
@@ -156,10 +161,13 @@ nav {
     flex-direction: column;
     transition: 0.4s;
     position: absolute;
-    top: 70px;
     right: 0;
     transform: translateY(-100%);
     z-index: -1;
+  }
+
+  .add-shadow {
+    box-shadow: 0px 0px;
   }
 
   .active {
@@ -436,39 +444,6 @@ nav {
   }
 
   /* navbar */
-
-  .navbar {
-    display: flex;
-    flex-direction: column;
-    transition: 0.4s;
-    position: absolute;
-    top: 70px;
-    right: 0;
-    transform: translateY(-100%);
-    z-index: -99;
-  }
-
-  .active {
-    transform: translateY(0);
-    transition: 0.4s;
-  }
-
-  .navbar-responsive {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    list-style-type: none;
-    padding: 0;
-    background-color: var(--pickled-bluewood);
-    transition: 0.3s;
-  }
-
-  .navbar-responsive li p {
-    color: var(--soft-amber);
-    width: 150px;
-    text-align: center;
-  }
 
   .navbar-responsive li button {
     display: inline-flex;
