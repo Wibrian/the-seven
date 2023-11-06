@@ -3,6 +3,7 @@
 @import url("/style/character/zhongli.css");
 @import url("/style/character/raiden.css");
 @import url("/style/character/nahida.css");
+@import url("/style/character/furina.css");
 @import url("/style/hero.css");
 @import url("/style/archon-element.css");
 @import url("/style/aside.css");
@@ -29,6 +30,16 @@
   --stromboli: #2e6049;
   --olivine: #9fc07a;
   --oxley: #6a9f7e;
+  /* pallette furina */
+  --botticelli: #c4d8e5;
+  --cod-gray: #0c0c0c;
+  --danube: #67abd2;
+  --kashmir-blue: #4c64a1;
+  --mid-gray: #605f65;
+  --astronaut: #25316a;
+  --fiord: #3b526d;
+  --beaver: #8d6a58;
+  --ship-gray: #35313c;
 }
 
 * {
@@ -162,7 +173,7 @@ nav {
     transition: 0.4s;
     position: absolute;
     right: 0;
-    transform: translateY(-100%);
+    transform: translateY(-101%);
     z-index: -1;
   }
 
@@ -377,6 +388,13 @@ nav {
 
   .video > iframe {
     height: 360px;
+  }
+
+  /* furina */
+
+  .furina iframe {
+    width: auto;
+    height: 240px;
   }
 
   /* aside */
