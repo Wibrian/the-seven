@@ -84,10 +84,18 @@ p {
 /* navbar */
 
 nav {
-  position: sticky;
+  position: fixed;
   top: 0;
+  right: 0;
+  left: 0;
   padding: 0;
   z-index: 9;
+}
+
+.nav {
+  position: absolute;
+  right: 0;
+  left: 0;
 }
 
 .navbar {
@@ -144,9 +152,9 @@ nav {
   }
 
   /* hero */
-  header {
+  .hero {
     flex-direction: column-reverse;
-    padding: 20px 20px 20px 20px;
+    padding: 70px 20px 20px 20px;
     background-attachment: fixed;
   }
 
@@ -443,9 +451,9 @@ nav {
 
   /* hero */
 
-  header {
+  .hero {
     flex-direction: column-reverse;
-    padding: 15px 15px 15px 15px;
+    padding: 70px 15px 25px 15px;
     background-attachment: fixed;
   }
 

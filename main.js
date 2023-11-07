@@ -26,7 +26,8 @@ outClick.addEventListener("click", () => {
   }
 });
 
-const section = document.querySelector("#content");
+const section = document.querySelector("main");
+const sectionFooter = document.querySelector("footer");
 const btnHeight = navbarResponsive.querySelector("button");
 let child = navbar.querySelectorAll("a");
 

@@ -1,12 +1,12 @@
 /* hero */
 
-header {
+.hero {
   display: flex;
   flex: 1;
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
-  padding: 20px 55px 0 55px;
+  padding: 70px 55px 20px 55px;
   color: var(--pickled-bluewood);
   background-image: url("/image/twilight-2.svg");
   background-repeat: no-repeat;
@@ -16,7 +16,7 @@ header {
   object-fit: contain;
   /* height: 100vh; */
   height: 100%;
-  position: relative;
+  /* position: relative; */
   z-index: 10;
 }
 
@@ -33,7 +33,7 @@ header {
 }
 
 .paimon > img {
-  width: 550px;
+  width: 530px;
 }
 
 .view {
