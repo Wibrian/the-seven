@@ -400,9 +400,36 @@ nav {
 
   /* furina */
 
-  .furina iframe {
+  .furina {
+    flex-direction: column;
+    padding-left: 30px;
+    padding-right: 30px;
+    gap: 60px;
+  }
+
+  .figure-furina,
+  .details-furina {
     width: auto;
-    height: 240px;
+  }
+
+  .furina-name > h3 {
+    font-size: 40px;
+  }
+
+  .furina-title > p {
+    font-size: 20px;
+  }
+
+  .furina-ideal {
+    font-size: 32px;
+  }
+
+  .image-character img {
+    width: 100%;
+  }
+
+  .video > iframe {
+    height: 360px;
   }
 
   /* aside */
@@ -514,8 +541,8 @@ nav {
 
   .venti {
     flex-direction: column;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 0px;
+    padding-right: 0px;
     gap: 60px;
   }
 
@@ -527,8 +554,8 @@ nav {
 
   .zhongli {
     flex-direction: column;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 0px;
+    padding-right: 0px;
     gap: 60px;
   }
 
@@ -540,8 +567,8 @@ nav {
 
   .raiden {
     flex-direction: column;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 0px;
+    padding-right: 0px;
     gap: 60px;
   }
 
@@ -553,8 +580,21 @@ nav {
 
   .nahida {
     flex-direction: column;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 0px;
+    padding-right: 0px;
+    gap: 60px;
+  }
+
+  .video > iframe {
+    height: 230px;
+  }
+
+  /* furina */
+
+  .furina {
+    flex-direction: column;
+    padding-left: 0px;
+    padding-right: 0px;
     gap: 60px;
   }
 
